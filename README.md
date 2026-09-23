@@ -9,6 +9,9 @@ A scalable, command-line based alarm clock application written in Python. It sup
 4. **Dynamic Sleeping**: To save CPU resources, the daemon calculates the precise time until the next alarm and sleeps for that duration (up to a max of 60 seconds, waking up occasionally to check if you added new alarms).
 5. **Notification**: Once an alarm's scheduled time is reached, the daemon triggers the `MacOSNotifier` which plays a sound (`beep 3`) and shows a native modal popup alert on the screen that stays until you click "OK".
 6. **State Update**: One-time alarms are marked as `triggered: true`, and interval alarms update their `last_triggered` date so they don't fire again until the next day.
+![Uploading image.png…]()
+
+
 
 ## Features
 - **Date/Time Alarms**: Schedule an alarm for a specific date and time (ISO format).
